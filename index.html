@@ -60,8 +60,10 @@
                 console.log({ keyType, pubKey })
               }
               setConfig(output)
+              return
             }
           } catch { }
+          setConfig("")
         })()
 
         return () => controller.abort()
