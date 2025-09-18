@@ -33,6 +33,7 @@
       const search = useCallback(debounce((name) => {
         console.log("searching", name);
         if (name === "") {
+          setConfig("")
           return () => { }
         }
 
